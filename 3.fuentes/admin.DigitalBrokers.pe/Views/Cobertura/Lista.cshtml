@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Lista";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container">
+    <h1>Convenio Principal de Beneficios para Vehiculos</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <h4>Seleccione Aseguradora</h4>
+            <select id="aseguradora">
+                <!--Carga Dinamica de Aseguradoras-->
+            </select>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Seleccione Tipo de Cobertura</h4>
+            <select id="cobTipo">
+                <!--Carga Dinamica de Coberturas-->
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>Filtrar</h4>
+            <input type="button" name="btnFiltrar" id="btnFiltrar" value="Buscar" />       
+        </div>
+    </div>
+    <hr />
+
+    <div class="row">
+        <!--MODO TABLA-->
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                <tr>
+                    <th class="center">OP</th>
+                    <th class="center">ID</th>
+                    <th class="center">Descripcion</th>
+                    <th class="center">Convenio</th>
+                    <th class="center">Estado</th>
+                  
+                </tr>
+            </thead>
+
+            <tbody id="coberturas">
+                <tr></tr>
+            </tbody>
+
+        </table>
+        <!--FIN MODO-->
+    </div>
+</div>
+
+<script src="~/Javascript/Cobertura.js"></script>

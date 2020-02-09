@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Plataforma";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container full-width">
+    <div class="row">
+        <h1>Hola, @Session["UsuarioNombres"].ToString() </h1>
+        <div class="col-lg-10">
+            <div class="alert alert-warning">
+                <p><strong>Contenido en vivo:</strong>  Recuerda que el contenido en vivo se muestra siempre y cuando la sesión se encuentre activa. <span id="vehicularUpdate"></span></p>
+            </div>
+        </div>
+        
+    </div>
+  
+    <div class="row">
+      
+        <div class="col-lg-2">
+            <h4>TIPO SEGURO</h4>
+            <select id="tipoSeguro">
+                <option value="01">TODOS</option>
+                <option value="02">VEHICULAR</option>
+                <option value="03">SALUD</option>
+            </select>
+        </div>
+        <div class="col-lg-2">
+            <h4>DESDE</h4>
+            <input type="text" id="txtdesde" value="@DateTime.Now.ToString("dd/MM/yyyy")" disabled />
+        </div>
+        <div class="col-lg-2">
+            <h4>HASTA</h4>
+            <input type="text" id="txthasta" value="@DateTime.Now.ToString("dd/MM/yyyy")" disabled />
+        </div>
+        <div class="col-lg-2">
+            <h4>RESULTADOS</h4>
+            <div class="checkbox checkbox-success">
+                <input id="chkVivo" type="checkbox" checked>
+                <label for="chkVivo" id="lblVivo">
+                    En vivo
+                </label>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h4>FILTRO</h4>
+            <input type="button" id="btnFiltrar" class="btn btn-success" value="Buscar" contenteditable="false" />
+        </div>
+
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-lg-10">
+                <figure>
+                    <img src="~/images/carico.png" alt="Vehicular" />
+                </figure>            
+            <h3>SEGURO VEHICULAR</h3>
+            <!--Lista de Cotizaciones -->
+            <fieldset>
+                    <div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <tr>
+                                    <th class="center">Acc.</th>
+                                    <th class="center">PDF</th>
+                                    <th class="center">Id</th>
+                                    <th class="center">Vehiculo</th>
+                                    <th class="center">Email</th>
+                                    <th class="center">Telefono</th>
+                                    <th class="center">Valor(Ref)</th>
+                                    <th class="center">Fecha</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="Cotizaciones">
+                                <tr>
+                                    <td>
+                                        Loading...
+                                        <img src="~/images/loading.gif" alt="Loading" />
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </fieldset>
+        </div>
+    </div> 
+
+</div>
+<script src="~/Javascript/Dashboard.js?MOD005"></script>

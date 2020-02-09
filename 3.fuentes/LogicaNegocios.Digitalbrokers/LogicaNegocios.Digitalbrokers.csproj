@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CC27CDB-9725-4D52-B395-4BB54C7DCDDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogicaNegocios.Digitalbrokers</RootNamespace>
+    <AssemblyName>LogicaNegocios.Digitalbrokers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.11.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BRGeneral.cs" />
+    <Compile Include="LNAseguradora.cs" />
+    <Compile Include="LNAseguradoraTasas.cs" />
+    <Compile Include="LNCliente.cs" />
+    <Compile Include="LNCobertura.cs" />
+    <Compile Include="LNCoberturaTipo.cs" />
+    <Compile Include="LNCompras.cs" />
+    <Compile Include="LNCotizacion.cs" />
+    <Compile Include="LNCotizacionDetalle.cs" />
+    <Compile Include="LNCotizacionDetalleSalud.cs" />
+    <Compile Include="LNCotizacionSalud.cs" />
+    <Compile Include="LNDeducibles.cs" />
+    <Compile Include="LNMarcaVehiculo.cs" />
+    <Compile Include="LNSolicitudCotizacion.cs" />
+    <Compile Include="LNUsuario.cs" />
+    <Compile Include="LNVehiculo.cs" />
+    <Compile Include="LNVehiculoModelo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos.Digitalbrokers\AccesoDatos.Digitalbrokers.csproj">
+      <Project>{4d266c07-9f7b-4c44-a0ea-aa0b412ca795}</Project>
+      <Name>AccesoDatos.Digitalbrokers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades.Digitalbrokers\Entidades.Digitalbrokers.csproj">
+      <Project>{077d5197-7a00-493c-ac22-bf2a41c4b196}</Project>
+      <Name>Entidades.Digitalbrokers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General.EntidadesNegocio\General.EntidadesNegocio.csproj">
+      <Project>{c2f56f9f-f8bd-4978-9acf-1d928f94024c}</Project>
+      <Name>General.EntidadesNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General.Librerias.CodigoUsuario\General.Librerias.CodigoUsuario.csproj">
+      <Project>{dfbcbab6-c7e7-4ce5-87f6-c1d6bfa375d6}</Project>
+      <Name>General.Librerias.CodigoUsuario</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

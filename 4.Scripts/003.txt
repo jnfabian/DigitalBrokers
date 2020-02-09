@@ -1,0 +1,22 @@
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2020,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2021,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2022,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2023,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2024,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2025,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2026,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2027,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2028,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2029,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019
+insert into DBPE_ASEGURADORA_CLASIFICACION(idAseguradora, DescAseguradora,Clasificacion,Provincia, Anio,Tasa,Tasa_Provincia,chrEstado)
+select idAseguradora,DescAseguradora,Clasificacion,Provincia,2030,Tasa,Tasa_Provincia,chrEstado from DBPE_ASEGURADORA_CLASIFICACION where anio=2019

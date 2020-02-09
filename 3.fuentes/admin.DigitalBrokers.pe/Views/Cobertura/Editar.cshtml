@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container">
+
+    <h2>EDITAR COBERTURA</h2>
+    <img src="~/images/carico.png" />
+    <hr />
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h4>ID</h4>
+            <span id="id">@ViewBag.idCobertura</span>
+        </div>
+        
+        <div class="col-lg-3">
+            <h4>ASEGURADORA</h4>
+            <select id="aseguradora"></select>
+        </div>
+        <div class="col-lg-3">
+            <h4>TIPO COBERTURA</h4>
+            <select id="cobTipo"></select>
+        </div>
+
+    </div>
+    <hr />
+    <h2>DETALLE DE LA COBERTURA</h2>
+
+    <hr />
+    <div class="row">
+        <div class="col-lg-12 lapositiva">
+            <h4>DESCRIPCION</h4>
+            <textarea id="descripcion"></textarea>
+            
+        </div>
+        <div class="col-lg-12 lapositiva">
+            <h4>CONVENIO</h4>
+            <textarea id="valrconvenio"></textarea>
+            <input type="button" id="btnSave" class="btn btn-success" value="Actualizar Deducible" contenteditable="false" />
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="idCobertura" value="@ViewBag.idCobertura" />
+<script src="~/Javascript/CoberuraDetalle.js?MOD01"></script>
+<script src="~/Javascript/Base/jquery.m.toast.js"></script>

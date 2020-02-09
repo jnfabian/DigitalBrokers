@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Buy";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+<div class="cf-slide-Compra mdl-typography--text-center">
+    <div class="mdl-typography--text-center">
+        <div class="cf-slogan-ppal cf-slogan">
+            ¡Excelente Elección!
+        </div>
+
+        <!--BUY FORM -->
+        <div class="formularioCompra mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__supporting-text">
+                <h3>Orden de Compra - Seguro Vehicular </h3>
+                <!--Aqui el Combo en SI-->
+                <div class="full-ancho mdl-textfield mdl-js-textfield">
+                    <!--Aqui Combo de Modelos de Seguros-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="Aseguradora" name="profile_information_form_country" class="mdl-selectfield__select" required>
+                            <!--Carga Dinamica de Cotización Seguros-->
+                        </select>
+                        <label for="Aseguradora" class="mdl-selectfield__label">Selecciona tu Seguro a Contratar</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Seguros-->
+                </div>
+
+                <!--Nombres-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="Nombres" placeholder="Nombres">
+                    @*<label for="Nombres" class="mdl-textfield__label">Nombres</label>*@
+                </div>
+
+                <!--Apellido Paterno-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="ApePaterno" placeholder="Apellido Paterno">
+                    @*<label for="ApePaterno" class="mdl-textfield__label">Apellido Paterno</label>*@
+                </div>
+                <!--Apellido Materno-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="ApeMaterno" placeholder="Apellido Materno">
+                    @*<label for="ApeMaterno" class="mdl-textfield__label">Apellido Materno</label>*@
+                </div>
+
+                <!--DNI-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="Dni" placeholder="DNI">
+                    @*<label for="Dni" class="mdl-textfield__label">DNI</label>*@
+                </div>
+
+                <!--SEXO-->
+                <div class="mdl-textfield mdl-js-textfield">
+                    <!--Aqui Combo de Modelos de Autos-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="sexo" name="profile_information_form_country" class="mdl-selectfield__select" required>
+                            <!--Carga Dinamica de Sexo-->
+                            <option value="M" selected>Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                        <label for="sexo" class="mdl-selectfield__label">Sexo</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Autos-->
+                </div>
+
+                <!--CIUDAD-->
+                <div class="mdl-textfield mdl-js-textfield">
+                    <!--Aqui Combo de Ciudades de Lima-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="ciudad" name="profile_information_form_country" class="mdl-selectfield__select" required>
+                            <!--Carga Dinamica de Ciudades-->
+                            <option value="150100"> Lima</option>
+                            <option value="150101"> Lima</option>
+                            <option value="150102"> Ancón</option>
+                            <option value="150103"> Ate</option>
+                            <option value="150104"> Barranco</option>
+                            <option value="150105"> Breña</option>
+                            <option value="150106"> Carabayllo</option>
+                            <option value="150107"> Chaclacayo</option>
+                            <option value="150108"> Chorrillos</option>
+                            <option value="150109"> Cieneguilla</option>
+                            <option value="150110"> Comas</option>
+                            <option value="150111"> El Agustino</option>
+                            <option value="150112"> Independencia</option>
+                            <option value="150113"> Jesús María</option>
+                            <option value="150114"> La Molina</option>
+                            <option value="150115"> la victoria</option>
+                            <option value="150116"> Lince</option>
+                            <option value="150117"> Los Olivos</option>
+                            <option value="150118"> Lurigancho</option>
+                            <option value="150119"> Lurin</option>
+                            <option value="150120"> Magdalena del Mar</option>
+                            <option value="150121"> Pueblo Libre</option>
+                            <option value="150122"> Miraflores</option>
+                            <option value="150123"> Pachacamac</option>
+                            <option value="150124"> Pucusana</option>
+                            <option value="150125"> Puente Piedra</option>
+                            <option value="150126"> Punta Hermosa</option>
+                            <option value="150127"> Punta Negra</option>
+                            <option value="150128"> Rímac</option>
+                            <option value="150129"> San Bartolo</option>
+                            <option value="150130"> San Borja</option>
+                            <option value="150131"> San Isidro</option>
+                            <option value="150132"> San Juan de Lurigancho</option>
+                            <option value="150133"> San Juan de Miraflores</option>
+                            <option value="150134"> San Luis</option>
+                            <option value="150135"> San Martín de Porres</option>
+                            <option value="150136"> San Miguel</option>
+                            <option value="150137"> Santa Anita
+                            <option value="150138"> Santa María del Mar</option>
+                            <option value="150139"> Santa Rosa</option>
+                            <option value="150140"> Santiago de Surco</option>
+                            <option value="150141"> Surquillo</option>
+                            <option value="150142"> Villa El Salvador</option>
+                            <option value="150143"> Villa María del Triunfo</option>
+                        </select>
+                        <label for="ciudad" class="mdl-selectfield__label">Ciudad</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Autos-->
+                </div>
+
+                <!--Domicilio-->
+                <div class="full-ancho mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" class="mdl-textfield__input" id="domicilio" placeholder="Domicilio">
+                    @*<label for="domicilio" class="mdl-textfield__label">Domicilio</label>*@
+                </div>
+                <!--Email-->
+                <div class="full-ancho mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="Email" class="mdl-textfield__input" id="Email" placeholder="Email">
+                    @*<label for="password" class="mdl-textfield__label">Email</label>*@
+                </div>
+                <!--Telefono-->
+                <div class="full-ancho mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="number" class="mdl-textfield__input" id="Telefono" placeholder="Teléfono">
+                    @*<label for="Telefono" class="mdl-textfield__label">Telefono</label>*@
+                </div>
+                <input type="button" class="cf-botton-probar mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-typography--text-uppercase" id="buy" value="Solicitar Seguro Vehicular" />
+            </div>
+            
+        </div>
+        <!--BUY FORM -->
+
+    </div>
+    <input type="hidden" id="son" name="son" value="@Session["idCotizacion"]" />
+</div>
+    @*<script src="~/Scripts/base/Buy.js?MO02"></script>*@
+    <script src="~/Scripts/base/optimize/buy-optimize.min.js"></script>

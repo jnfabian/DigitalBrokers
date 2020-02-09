@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+
+<div class="container">
+  
+    <h2>DATOS DEL VEHÍCULO</h2>
+    <img src="~/images/carico.png" />
+    <hr />
+
+    <div class="row">
+  
+        <div class="col-lg-4">
+            <h4>Marca</h4>
+           <span id="Marca"></span>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Año</h4>
+            <span id="Ano">@ViewBag.Anio</span>
+        </div>
+        <div class="col-lg-4">
+            <h4>Modelo</h4>
+            <input type="text" id="Modelo" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Carrocería</h4>
+            <input type="text" id="carroceria" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Puertas</h4>
+            <input type="text" id="puertas" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Asientos</h4>
+            <input type="text" id="asientos" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Tracción</h4>
+            <input type="text" id="traccion" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Desplazamiento</h4>
+            <input type="text" id="desplazamiento" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Potencia</h4>
+            <input type="text" id="potencia" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Carburante</h4>
+            <input type="text" id="carburante" />
+        </div>
+        <div class="col-lg-4">
+            <h4>VRN</h4>
+            <input type="text" id="VRN" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Precio(USD$)</h4>
+            <input type="text" id="precio" />
+        </div>
+    </div>
+    <hr />
+    <h2>CLASIFICACION</h2>
+    <img src="~/images/clasificacion.png" />
+    <hr />
+    <div class="row">
+        <div class="col-lg-2 lapositiva">
+            <h4>LA POSITIVA</h4>
+            <input type="text" id="claslapositiva" />
+        </div>
+        <div class="col-lg-2 mapfre">
+            <h4>MAPFRE</h4>
+            <input type="text" id="clasmapfre" />
+        </div>
+        <div class="col-lg-2 pacifico">
+            <h4>PACIFICO</h4>
+            <input type="text" id="claspacifico" />
+        </div>
+        <div class="col-lg-2 rimac">
+            <h4>RIMAC</h4>
+            <input type="text" id="clasrimac" />
+        </div>
+        <div class="col-lg-2 hdi">
+            <h4>HDI</h4>
+            <input type="text" id="clasHDI" />
+        </div>
+    </div>
+
+    <hr />
+    <h2>GEOLOCALIZACIÓN</h2>
+    <img src="~/images/gps.png" />
+    <hr />
+    <div class="row">
+        <div class="col-lg-2 lapositiva">
+            <h4>LA POSITIVA</h4>
+            <input type="text" id="gpslapositiva" />
+        </div>
+        <div class="col-lg-2 mapfre">
+            <h4>MAPFRE</h4>
+            <input type="text" id="gpsmapfre" />
+        </div>
+        <div class="col-lg-2 pacifico">
+            <h4>PACIFICO</h4>
+            <input type="text" id="gpspacifico" />
+        </div>
+        <div class="col-lg-2 rimac">
+            <h4>RIMAC</h4>
+            <input type="text" id="gpsrimac" />
+        </div>
+        <div class="col-lg-2 hdi">
+            <h4>HDI</h4>
+            <input type="text" id="gpsHDI" />
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <input type="button" id="btnSave" class="btn btn-success" value="Actualizar Vehiculo" contenteditable="false" />
+        </div>
+
+    </div>
+    
+</div>
+
+<input type="hidden" id="idMarca" value="@ViewBag.idMarca " />
+<input type="hidden" id="idModelo" value="@ViewBag.idModelo " />
+<input type="hidden" id="Anio" value="@ViewBag.Anio " />
+
+<script src="~/Javascript/VehicularDetalle.js?MOD01"></script>
+<script src="~/Javascript/Base/jquery.m.toast.js"></script>

@@ -1,0 +1,148 @@
+﻿<div class="cf-slide mdl-typography--text-center">
+    <div class="cf-slogan-ppal cf-slogan">Tu seguro vehicular con estos simples pasos</div>
+    <div  class="cf-slogan-ppal cf-slogan-sub">
+        <!--MDL FORMULARIO-->
+        <div class="formulario mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__supporting-text">
+                <h3>¡Cotiza ahora!</h3>
+                <!--Aqui el Combo en SI-->
+                <div class="full-ancho mdl-textfield mdl-js-textfield">
+                    <!--Aqui Combo de Modelos de Autos-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="marcasvehiculos" name="profile_information_form_country" class="mdl-selectfield__select" required>
+                            <!--Carga Dinamica de Vehiculos-->
+                        </select>
+                        <label for="marcasvehiculos" class="mdl-selectfield__label">Selecciona la marca de tu vehiculo</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Autos-->
+                </div>
+                <!--Año de fabricacion-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <!--Aqui Combo de Modelos de Autos-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="anofab" name="anofab" class="mdl-selectfield__select" required>
+                            @*<option value="2019" selected>2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>*@
+
+                        </select>
+                        <label for="anofab" class="mdl-selectfield__label">Fabricacion</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Autos-->
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <!--Aqui Combo de Modelos de Autos-->
+                    <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                        <select id="ModeloVh" name="ModeloVh" class="mdl-selectfield__select" required>
+                            <!--DATA-->
+                            
+                        </select>
+                        <label for="ModeloVh" class="mdl-selectfield__label">Modelo</label>
+                        <span class="mdl-selectfield__error">No puede estar vacio</span>
+                    </div>
+                    <!--Fin Combo de Modelos de Autos-->
+                </div>
+                <!--Valor del Mercado-->
+                
+                <div class="full-ancho mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    USD$<input type="number" class="mdl-textfield__input" id="valorVehiculo" placeholder="Valor Referencial del vehículo">
+                    @*<label for="valorVehiculo" class="mdl-textfield__label">Valor Referencial en $USS</label>*@
+                </div>
+                
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input type="Email" class="mdl-textfield__input" id="Email" placeholder="Email">
+                        @*<label for="password" class="mdl-textfield__label">Email</label>*@
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input type="number" class="mdl-textfield__input" id="Telefono" placeholder="Teléfono">
+                        @*<label for="password" class="mdl-textfield__label">Telefono</label>*@
+                    </div>
+
+                <input type="button" class="cf-botton-probar mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-typography--text-uppercase" id="btnCotiza" value="Encuentra Tu Seguro" />
+
+                </div>
+        </div>
+        <!--FIN MDL FORMULARIO-->
+    </div>
+    <!--INFORMACION-->
+    <div class="cf-paseo">
+        <div class="informacion-seguro">
+            <div class="contenedor-informacion">
+                <img src="~/imagenes/reloj.png" />
+                <span>Rapidez</span>
+                <p>Cotiza tu seguro vehicular con todas las aseguradoras del mercado en segundos.</p>
+            </div>
+            <div class="contenedor-informacion">
+                <img src="~/imagenes/asistencia.png" />
+                
+                <span>Asistencia</span>
+                <p>Te asistimos antes, durante y después de la contratación de tu seguro vehicular.</p>
+            </div>
+            <div class="contenedor-informacion">
+                <img src="~/imagenes/ahorra_.png" />
+                
+                <span>Ahorro</span>
+                <p>Contrata y gestiona tus seguros online, ahorrando tiempo y dinero, cotiza ahora.</p>
+            </div>
+        </div>
+        
+    </div>
+    <!--FIN INFORMACION-->
+
+    <!--ASEGURADORAS-->
+    <div class="informacion-seguro">
+        <div class="contenedor-seguros">
+            <img src="~/imagenes/Seguros/Rimac.jpg" />
+            
+        </div>
+        <div class="contenedor-seguros">
+            <img src="~/imagenes/Seguros/Pacifico.jpg" />
+        </div>
+        <div class="contenedor-seguros">
+            <img src="~/imagenes/Seguros/Mapfre.jpg" />
+        </div>
+        <div class="contenedor-seguros">
+            <img src="~/imagenes/Seguros/La_Positiva.jpg" />
+        </div>
+     
+
+    </div>
+    <!--FIN ASEGURADORAS-->
+
+    <!--Footer-->
+    <footer class="cf-footer mdl-mini-footer">
+        <div class="mdl-mini-footer--top-section">
+            <div class="mdl-mini-footer--left-section">
+                <a href="https://web.facebook.com/digitalbrokers/" class="mdl-mega-footer--social-btn"><img src="~/imagenes/facebook.png" alt="Twitter" /></a>
+            </div>
+        </div>
+        <div class="mdl-mini-footer-middle-section">
+            <p class="mdl-typography--font-light">
+                DIGITAL BROKERS S.A.C. CORREDORES DE SEGUROS ® Es una Marca registrada. 2019 - Todos los derechos Reservados.
+            </p>
+
+        </div>
+    </footer>
+</div>
+
+@*<script src="~/Scripts/base/Vehicular.js?VE005"></script>*@
+<script src="~/Scripts/base/optimize/vehicular-optimize.min.js?MOD02"></script>

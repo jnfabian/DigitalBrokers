@@ -1,0 +1,255 @@
+﻿@{
+    ViewBag.Title = "Agregar vehículo";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container">
+
+    <h2>DATOS DEL VEHÍCULO</h2>
+    <img src="~/images/carico.png" />
+    <hr />
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <h4>Marca</h4>
+            <select id="marcasvehiculos" class="inputNuevo">
+                <!--Carga Dinamica de Vehiculos-->
+            </select>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Descripcion del Modelo</h4>
+            <input type="text" id="Modelo" class="inputNuevo" placeholder="EJEM: BMW X9" />
+        </div>
+        <div class="col-lg-4">
+            <h4>ID Modelo</h4>
+            <input type="text" id="idModelo" class="inputNuevo" placeholder="de 9000 en adelante" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Carrocería</h4>
+            <select id="carroceria" class="inputNuevo">
+                <option value="S">SEDAN</option>
+                <option value="H">HACTHBACK</option>
+                <option value="C">CAMIONETA</option>
+                <option value="C">CAMIONETA 4 X 4</option>
+                <option value="S">SUV</option>
+                <option value="S4">SUV 4 X 4</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>Puertas</h4>
+            <select id="puertas" class="inputNuevo">
+                <option value="2">2 PUERTAS</option>
+                <option value="3">3 PUERTAS</option>
+                <option value="4">4 PUERTAS</option>
+                <option value="5">5 PUERTAS</option>
+                <option value="6">6 PUERTAS</option>
+                <option value="7">7 PUERTAS</option>
+                <option value="7">8 PUERTAS</option>
+                <option value="7">9 PUERTAS</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>Asientos</h4>
+            <select id="asientos" class="inputNuevo">
+                <option value="4">4 ASIENTOS</option>
+                <option value="5">5 ASIENTOS</option>
+                <option value="6">6 ASIENTOS</option>
+                <option value="8">8 ASIENTOS</option>
+                <option value="10">10 ASIENTOS</option>
+                <option value="12">12 ASIENTOS</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>Tracción</h4>
+            <select id="traccion" class="inputNuevo">
+                <option value="D">DELANTERA</option>
+                <option value="P">POSTERIOR</option>
+                <option value="AWD">ALL WILL DRIVE (4 X 4)</option>
+
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>Desplazamiento</h4>
+            <input type="number" id="desplazamiento" placeholder="Ejemplo: 1300 o 1600" class="inputNuevo" />
+        </div>
+        <div class="col-lg-4">
+            <h4>Potencia (HPS)</h4>
+            <input type="number" id="potencia" placeholder="80HPS" class="inputNuevo" /> 
+        </div>
+        <div class="col-lg-4">
+            <h4>TIPO DE COMBUSTIBLE</h4>
+            <select id="carburante" class="inputNuevo">
+                <option value="84">GAS 84 OCTANOS</option>
+                <option value="90">GAS 90 OCTANOS</option>
+                <option value="95">GAS 95 OCTANOS</option>
+                <option value="97">GAS 97 OCTANOS</option>
+                <option value="98">GAS 98 OCTANOS</option>
+                <option value="100">GAS AVION</option>
+                <option value="120">GLP ORIGINAL</option>
+                <option value="120">GNV ORIGINAL</option>
+                <option value="120">PETROLEO</option>
+                <option value="1">VEHICULO ELECTRICO</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <h4>VRN</h4>
+            <input type="number" id="VRN" placeholder="Ejemplo: 20000 " class="inputNuevo" />
+        </div>
+
+    </div>
+    <hr />
+    <h2>PRECIOS ($USD)</h2>
+    <img src="~/images/precio.png" width="80" />
+    <div class="row">
+        <div class="col-lg-2">
+            <h4>2018</h4>
+            <input type="number" id="P2018" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+        <div class="col-lg-2">
+            <h4>2017</h4>
+            <input type="number" id="P2017" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+        <div class="col-lg-2">
+            <h4>2016</h4>
+            <input type="number" id="P2016" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+        <div class="col-lg-2">
+            <h4>2015</h4>
+            <input type="number" id="P2015" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+        <div class="col-lg-2">
+            <h4>2014</h4>
+            <input type="number" id="P2014" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+        <div class="col-lg-2">
+            <h4>2013</h4>
+            <input type="number" id="P2013" placeholder="Ejemplo: $10.000 " class="inputPrecio" /> 
+        </div>
+        <div class="col-lg-2">
+            <h4>2012</h4>
+            <input type="number" id="P2012" placeholder="Ejemplo: $10.000 " class="inputPrecio" />
+        </div>
+    </div>
+
+
+
+
+
+    <hr />
+    <h2>CLASIFICACION</h2>
+    <img src="~/images/clasificacion.png" />
+    <hr />
+    <div class="row">
+        <div class="col-lg-2 lapositiva">
+            <h4>LA POSITIVA</h4>
+            <select id="positivaclas">
+                <option value="BAJO RIESGO">BAJO RIESGO</option>
+                <option value="MEDIANO RIESGO">MEDIANO RIESGO</option>
+                <option value="ALTO RIESGO">ALTO RIESGO</option>
+                <option value="CHINOS">CHINOS</option>
+                <option value="PICK UP">PICK UP</option>
+                <option value="EXCLUIDO">EXCLUIDO</option>
+            </select>
+        </div>
+        <div class="col-lg-2 mapfre">
+            <h4>MAPFRE</h4>
+            <select id="mapfreclas">
+                <option value="BAJO RIESGO">BAJO RIESGO</option>
+                <option value="MEDIANO RIESGO">MEDIANO RIESGO</option>
+                <option value="ALTO RIESGO">ALTO RIESGO</option>
+                <option value="CHINO">CHINO</option>
+                <option value="PICK UP">PICK UP</option>
+                <option value="EXCLUIDO">EXCLUIDO</option>
+            </select>
+        </div>
+        <div class="col-lg-2 pacifico">
+            <h4>PACIFICO</h4>
+            <select id="pacificoclas">
+                <option value="BAJO RIESGO 1">BAJO RIESGO 1</option>
+                <option value="BAJO RIESGO 2">BAJO RIESGO 2</option>
+                <option value="MEDIANO RIESGO">MEDIANO RIESGO</option>
+                <option value="ALTO RIESGO">ALTO RIESGO</option>
+                <option value="CHINO">CHINO</option>
+                <option value="PICK UP">PICK UP</option>
+                <option value="EXCLUIDO">EXCLUIDO</option>
+            </select>
+        </div>
+        <div class="col-lg-2 rimac">
+            <h4>RIMAC</h4>
+            <select id="rimacclas">
+                <option value="BAJO RIESGO 1">BAJO RIESGO 1</option>
+                <option value="BAJO RIESGO 2">BAJO RIESGO 2</option>
+                <option value="ALTO RIESGO 1">ALTO RIESGO 1</option>
+                <option value="ALTO RIESGO 2">ALTO RIESGO 2</option>
+                <option value="PICK UP">PICK UP</option>
+                <option value="EXCLUIDO">EXCLUIDO</option>
+            </select>
+        </div>
+        <div class="col-lg-2 hdi">
+            <h4>HDI</h4>
+            <select id="hdiclas">
+                <option value="CATEGORIA 1">CATEGORIA 1</option>
+                <option value="CATEGORIA 2">CATEGORIA 2</option>
+                <option value="ALTA GAMA">ALTA GAMA</option>
+                <option value="EXCLUIDO">EXCLUIDO</option>
+
+            </select>
+        </div>
+    </div>
+
+    <hr />
+    <h2>GEOLOCALIZACIÓN</h2>
+    <img src="~/images/gps.png" />
+    <hr />
+    <div class="row">
+        <div class="col-lg-2 lapositiva">
+            <h4>LA POSITIVA</h4>
+            <select id="positivagps">
+                <option value="SI">REQUIERE GPS</option>
+                <option value="NO">NO REQUIERE GPS</option>
+            </select>
+        </div>
+        <div class="col-lg-2 mapfre">
+            <h4>MAPFRE</h4>
+            <select id="mapfregps">
+                <option value="SI">REQUIERE GPS</option>
+                <option value="NO">NO REQUIERE GPS</option>
+            </select>
+        </div>
+        <div class="col-lg-2 pacifico">
+            <h4>PACIFICO</h4>
+            <select id="pacificogps">
+                <option value="SI">REQUIERE GPS</option>
+                <option value="NO">NO REQUIERE GPS</option>
+            </select>
+        </div>
+        <div class="col-lg-2 rimac">
+            <h4>RIMAC</h4>
+            <select id="rimacgps">
+                <option value="SI">REQUIERE GPS</option>
+                <option value="NO">NO REQUIERE GPS</option>
+            </select>
+        </div>
+        <div class="col-lg-2 hdi">
+            <h4>HDI</h4>
+            <select id="hdigps">
+                <option value="SI">REQUIERE GPS</option>
+                <option value="NO">NO REQUIERE GPS</option>
+            </select>
+        </div>
+    </div>
+    <hr />
+
+    <div class="row">
+        <div class="col-lg-12">
+            <input type="button" id="btnSave" class="btn btn-success" value="Agregar Vehiculo" contenteditable="false" />
+        </div>
+
+    </div>
+
+</div>
+
+<script src="~/Javascript/agregarVehiculo.js"></script>
+<script src="~/Javascript/Base/jquery.m.toast.js"></script>

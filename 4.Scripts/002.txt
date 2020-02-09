@@ -1,0 +1,22 @@
+update t set t.[2020] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2021] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2022] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2023] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2024] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2025] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2026] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2027] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2028] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2029] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo
+update t set t.[2030] = tt.[2019] from DBPE_MARCAS_VEHICULOS_MODELOS  t
+inner join DBPE_MARCAS_VEHICULOS_MODELOS tt on t.idMarca = tt.idMarca and t.idModelo=tt.idModelo

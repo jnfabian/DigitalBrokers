@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "MiCotizacion";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="mdl-typography--text-center">
+
+    <div class="cf-slogan-ppal cf-slogan">
+        Guardamos tu cotización, hechale un vistazo.
+    </div>
+
+    <!--Botonera -->
+    <div class="botones">
+        <a class="cf-botton-probar mdl-button mdl-js-button" href="https://www.digitalbrokers.pe/vehicular">Generar nueva cotización</a>
+
+        <a class="cf-botton-probar mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-typography--text-uppercase" href="~/Cotizacion/DownloadEmail?id=@ViewBag.LinkDescarga">Descargar Cotización</a>
+
+    </div>
+    <!--FIN Botonera -->
+    <!--Start Cotización Detalle -->
+    <section class="cf-section-taller" id="talleres">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet mdl-cell--10-col-phone mdl-card mdl-shadow--3dp">
+                <div class="GrupoCabecera">
+                    <img src="~/imagenes/carico.png" /><h3 id="0001"> Cargando...</h3>
+                    <p>Esperamos que tu experiencia en nuestra plataforma sea placentera.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="grid-taller" class="mdl-grid">
+
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Rimac.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_rimac">Cargando...</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Rimac_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="RimacCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <div class="mdl-card__actions" id="botonera_rimac">
+                        <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button" data-upgraded=",MaterialButton">Solicitar</a><br><br>
+                        <a id="btndeducibleRimac" href="#" data-modal="#modalDeducibles" data-id="2" class="cf-botton-deducibles mdl-button mdl-js-button modal__trigger deducible" data-upgraded=",MaterialButton">Deducibles</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Pacifico.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_pacifico">Cargando...</h4>
+
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Pacifico_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="PacificoCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+
+                    </a><br /><br />
+                    <a id="btndeduciblePacifico" href="#" data-modal="#modalDeducibles" data-id="4" class="cf-botton-deducibles mdl-button mdl-js-button modal__trigger deducible" data-upgraded=",MaterialButton">Deducibles</a>
+                </div>
+
+            </div>
+
+
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Mapfre.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_mafre"> Cargando...</h4>
+
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Mafre_GPS">
+
+                    </span>
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="MafreCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+
+                    </a><br /><br />
+                    <a id="btndeducibleMapfre" href="#" data-modal="#modalDeducibles" data-id="3" class="cf-botton-deducibles mdl-button mdl-js-button modal__trigger deducible" data-upgraded=",MaterialButton">Deducibles</a>
+                </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/HDI.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_HDI"> Cargando...</h4>
+
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="HDI_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="HDICobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+
+                    </a><br /><br />
+                    <a id="btndeducibleHDI" href="#" data-modal="#modalDeducibles" data-id="5" class="cf-botton-deducibles mdl-button mdl-js-button modal__trigger deducible" data-upgraded=",MaterialButton">Deducibles</a>
+                </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/La_Positiva.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_LaPositiva"> Cargando...</h4>
+
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="LaPositiva_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="LaPositivaCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+
+                    </a><br /><br />
+                    <a id="btndeduciblePositiva" href="#" data-modal="#modalDeducibles" data-id="1" class="cf-botton-deducibles mdl-button mdl-js-button modal__trigger deducible" data-upgraded=",MaterialButton">Deducibles</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <input type="hidden" id="son" name="son" value="@ViewBag.idCotizacion" />
+        <input type="hidden" id="scategoria" name="scategoria" />
+    </section>
+
+    <!--FIN Section talleres -->
+    <!--Modal Deducibles -->
+    <div id="modalDeducibles" class="modal modal__bg">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__title">
+                        <h3 class="modal__title-text" id="tituloDeducible">Deducibles por compania</h3>
+                    </div>
+                    <span class="mdl-button mdl-button--icon mdl-js-button  material-icons  modal__close"></span>
+                </div>
+
+                <div class="modal__text ">
+                    @*<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                            <thead>
+                                <tr>
+                                    <th>Deducibles</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="deduciblestbl">
+
+                            </tbody>
+                        </table>*@
+                    <ul id="deduciblestbl" class="checkmark"></ul>
+
+                </div>
+
+                <div class="modal__footer">
+
+                    <a class="mdl-button mdl-button--colored mdl-js-button  modal__close">
+                        Cerrar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin Modal LLamame -->
+
+</div>
+<script src="~/Scripts/base/optimize/cotizacion-vehicular.min.js"></script>
+<script src="~/Scripts/base/optimize/cobertura-optimize.min.js"></script>

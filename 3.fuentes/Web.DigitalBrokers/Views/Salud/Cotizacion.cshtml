@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Tu Cotización de Salud";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="mdl-typography--text-center">
+
+    <div class="cf-slogan-ppal cf-slogan">
+        Asegura lo más importante para Ti.
+    </div>
+
+    <!--Botonera -->
+    <div class="botones">
+        <a class="cf-link mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-typography--text-uppercase" href="http://www.digitalbrokers.pe">Nueva Cotización</a>
+
+        <a class="cf-link mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-typography--text-uppercase" href="~/Salud/DownloadSlip">Descargar Deducibles y Beneficios</a>
+    </div>
+    <!--FIN Botonera -->
+    <!--Start Cotización Detalle -->
+    <section class="cf-section-taller" id="talleres">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--10-col-tablet mdl-cell--10-col-phone mdl-card mdl-shadow--3dp">
+                <div class="GrupoCabecera">
+                    <h2>Datos de Contacto</h2>
+                    <h3 id="0001"> Cargando...</h3>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div id="grid-taller" class="mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Rimac.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_rimac">Cargando...</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Rimac_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="RimacCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+                        <i class="material-icons">add_shopping_cart</i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Pacifico.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_pacifico">Cargando...</h4>
+
+                </div>
+
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Pacifico_GPS">
+
+                    </span>
+
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="PacificoCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+                        <i class="material-icons">add_shopping_cart</i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-card__media">
+                    <img src="~/imagenes/Seguros/Mapfre.jpg" alt="" />
+                </div>
+                <div class="mdl-card__title">
+                    <h4 class="mdl-card__title-text" id="prima_mafre"> Cargando...</h4>
+
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <span class='mdl-typography--font-light' id="Mafre_GPS">
+
+                    </span>
+                    <div class='coberturas mdl-typography--font-light'>
+                        <span>Coberturas</span>
+                        <ul id="MafreCobertura" class="checkmark"></ul>
+                    </div>
+                </div>
+
+                <div class="mdl-card__actions">
+                    <a href="../../Compra/buy" class="cf-botton-contratar mdl-button mdl-js-button">
+                        Solicitar
+                        <i class="material-icons">add_shopping_cart</i>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!--FIN Section talleres -->
+
+
+    <input type="hidden" id="son" name="son" value="@Session["idCotizacionSalud"]" />
+</div>
+
+<script src="~/Scripts/base/CotizacionSaludDetalle.js?MOD004"></script>

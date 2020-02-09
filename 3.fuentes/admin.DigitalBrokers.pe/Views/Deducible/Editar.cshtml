@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container">
+
+    <h2>EDITAR DEDUCIBLE</h2>
+    <img src="~/images/carico.png" />
+    <hr />
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h4>ID</h4>
+            <span id="id"></span>
+        </div>
+        <div class="col-lg-3">
+            <h4>CATEGORIA</h4>
+            <span id="categoria"></span>
+        </div>
+        <div class="col-lg-3">
+            <h4>ASEGURADORA</h4>
+            <select id="aseguradora">
+                
+            </select>
+        </div>
+        <div class="col-lg-3">
+            <h4>TIPO DEDUCIBLE</h4>
+            <select id="cobTipo">
+                <option value="PARTICULAR">PARTICULAR</option>
+            </select>
+        </div>
+
+    </div>
+    <hr />
+    <h2>Deducible</h2>
+ 
+    <hr />
+    <div class="row">
+        <div class="col-lg-12 lapositiva">
+            <h4>DESCRIPCION</h4>
+            <textarea id="descripcion"></textarea>
+            <input type="button" id="btnSave" class="btn btn-success" value="Actualizar Deducible" contenteditable="false" />
+        </div>
+       
+    </div>
+</div>
+
+<input type="hidden" id="idDeducible" value="@ViewBag.idDeducible" />
+<script src="~/Javascript/Base/jquery.m.toast.js"></script>
+<script src="~/Javascript/DeducibleDetalle.js"></script>

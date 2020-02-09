@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DigitalBrokers.pe |Corredores |Seguro Online| Seguro Vehicular | Seguro Vida | Seguro Hogar | Broker| Asegura | Auto | Automoviles | Aseguradora | Digital | Seguros Lima | Seguros Provincia | Particular | Taxis | Corredora| Tu Seguro</title>
+    <meta name="keywords" content="Digitalbrokers.pe, Seguro, Seguro Online, Seguro vehicular, Seguro vida, Seguro hogar, Autos, Aseguradora, Lima, Peru, Provincias, Particular">
+    <meta name="description" content="DigitalBrokers.pe, Seguro vehicular, Seguro Online, Corredores, Online, Asesor">
+    <meta name="language" content="es">
+    <meta name="news_keywords" content="Digital Brokers , www.digitalbrokers.pe ">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="organization" content="Digital Brokers S.A.">
+
+    <link rel="stylesheet" href="~/css/material.light_blue-blue.min.css?MOD03" />
+    <link rel="stylesheet" href="~/css/material-modal.min.css?0001">
+    <link rel="stylesheet" href="~/css/estilos.css?MOD00019">
+    <link rel="stylesheet" href="~/css/mdl-selectfield.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="~/css/jquery.m.toast.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Favicon Personalizado-->
+    <link rel="apple-touch-icon" sizes="57x57" href="~/imagenes/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/imagenes/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/imagenes/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/imagenes/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/imagenes/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/imagenes/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/imagenes/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/imagenes/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/imagenes/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/imagenes/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/imagenes/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/imagenes/favicon-16x16.png">
+    <link rel="manifest" href="~/imagenes/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    @{ Html.RenderPartial("GoogleAnalitycs");  }
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-slayout--fixed-header">
+        <header class="cf-color mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    <a href="https://www.digitalbrokers.pe"><img src="~/imagenes/digitalbrokers.png" class="cf-logo" alt="logo" /></a>
+                </span>
+                <div class="mdl-layout-spacer">
+                </div>
+                <!--Navegacion Principal -->
+                <nav class="nav-link-sup mdl-navigation">
+                    <a href="../Vehicular" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Vehicular</a>
+                    <a href="../Salud" class="nav-link-sup mdl-navigation__link mdl-typography--text-uppercase">Salud</a>
+                    <a href="#" class="cf-botton-youtube mdl-button mdl-js-button modal__trigger" data-modal="#modal"><i class="material-icons">settings_phone</i> Te llamamos</a>
+                </nav>
+            </div>
+        </header>
+        <!--Navegacion Lateral -->
+        <div class="cf-dreawer mdl-layout__drawer">
+            <span class="cf-color mdl-layout-title">
+                <a href="https://www.digitalbrokers.pe"><img class="cf-logo" src="~/imagenes/digitalbrokers.png" alt="logo" /></a>
+            </span>
+            <nav class="mdl-navigation">
+                <a href="https://www.digitalbrokers.pe/Vehicular" class="mdl-navigation__link">Vehicular</a>
+                <a href="https://www.digitalbrokers.pe/Salud" class="mdl-navigation__link">Salud</a>
+
+                <div class="cf-dreawer-separator">
+                </div>
+
+                <a href="~/home/PreguntasFrecuentes" class="mdl-navigation__link">FAQ</a>
+            </nav>
+        </div>
+        <!--Slide -->
+
+        <div class="mdl-layout__content" id="cotizaya">
+            <!--Contenido del Sitio -->
+            <script src="~/js/jquery-1.9.1.min.js"></script>
+            <script src="~/js/jquery.m.toast.js"></script> 
+            
+            
+            @RenderBody()
+            <!--FIN Contenido del Sitio -->
+           
+        </div>
+
+    </div>
+   
+  
+
+    <!--Modal LLamame -->
+    <div id="modal" class="modal modal__bg">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__title">
+                        <h2 class="modal__title-text">¡Genial!</h2>
+                    </div>
+                    <span class="mdl-button mdl-button--icon mdl-js-button  material-icons  modal__close"></span>
+                </div>
+
+                <div class="modal__text ">
+                    <p>
+                        Un agente se pondrá en contacto contigo de inmediato
+                    </p>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input type="text" id="soNombres" class=" modal_llamame mdl-textfield__input">
+                        <label for="soNombres" class=" mdl-textfield__label">Ingresa tu Nombre</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input type="email" id="soEmail" class=" modal_llamame mdl-textfield__input">
+                        <label for="soEmail" class=" mdl-textfield__label">Ingresa tu Email</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input type="number" id="soTelefono" class=" modal_llamame mdl-textfield__input">
+                        <label for="soTelefono" class=" mdl-textfield__label">Ingresa aquí tu número</label>
+                    </div>
+                </div>
+              
+                <div class="modal__footer">
+                    <input type="button" id="llamada" name="llamada" class="cf-botton-youtube mdl-button mdl-js-button" value="Llamenme" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!--Fin Modal LLamame -->
+
+
+    <script src="~/js/material.min.js"></script>
+    <script src="~/js/mdl-selectfield.min.js"></script>
+    <script src="~/js/material-modal.min.js"></script>
+   
+     <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function () {
+            var widget_id = '1PJYC6dmhQ'; var d = document; var w = window; function l() {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);
+            } if (d.readyState == 'complete') { l(); } else { if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } }
+        })();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
+
+</body>
+</html>

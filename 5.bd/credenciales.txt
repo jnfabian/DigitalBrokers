@@ -1,0 +1,10 @@
+https://p3nwvpweb164.shr.prod.phx3.secureserver.net:8443/smb/my-profile
+uss: dlazarte
+latorrem000
+
+
+produccion
+https://digitalbrokers.pe/
+
+base de datos
+http://mssql.digitalbrokers.pe/silentlogon.aspx

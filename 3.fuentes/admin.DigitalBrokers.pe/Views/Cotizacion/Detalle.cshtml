@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "Detalle de Cotización";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <h1 id="idCotizacions">Detalle de Cotización</h1>
+        <div class="col-lg-2">
+            <h4>Vehiculo</h4>
+            <span id="descModelo"></span>
+        </div>
+        <div class="col-lg-2">
+            <h4>Año</h4>
+            <span id="Anio"></span>
+        </div>
+        <div class="col-lg-2">
+            
+        </div>
+        <div class="col-lg-2">
+            <h4>Cliente</h4>
+            <span id="cliente"></span>
+        </div>
+        
+        <div class="col-lg-2">
+            <h4>USO</h4>
+            <span>PARTICULAR</span>
+        </div>
+        <div class="col-lg-2">
+            <h4>Valor Ref.</h4>
+            <span id="valorref"></span>
+        </div>
+
+    </div>
+    <hr />
+
+    <div class="row">
+        <!--MODO TABLA-->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>RIMAC</th>
+                    <th>PACIFICO</th>
+                    <th>MAPFRE</th>
+                    <th>LA POSITIVA</th>
+                    <th>HDI SEGUROS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--first example-->
+                    <td id="tdRIMAC"></td>
+                    <td id="tdPACIFICO"></td>
+                    <td id="tdMAPFRE"></td>
+                    <td id="tdLAPOSITIVA"></td>
+                    <td id="tdHDI"></td>
+                </tr>
+                <tr>
+                    <!--second example-->
+                    <td class="success" id="TDGPS_RIMAC" ></td>
+                    <td class="success" id="TDGPS_PACIFICO"></td>
+                    <td class="success" id="TDGPS_MAPFRE"></td>
+                    <td class="success" id="TDGPS_LAPOSITIVA"></td>
+                    <td class="success" id="TDGPS_HDI"></td>
+                </tr>
+                <tr>
+                    <td class="danger" id="catRIMAC">CATEGORIA</td>
+                    <td class="danger" id="catPACIFICO">CATEGORIA</td>
+                    <td class="danger" id="catMAPFRE">CATEGORIA</td>
+                    <td class="danger" id="catLAPOSITIVA">CATEGORIA</td>
+                    <td class="danger" id="catHDI">CATEGORIA</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <!--FIN MODO-->
+        
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/Aseguradoras/logo_RIMAC.jpg">
+                
+                <div class="card-block">
+                    <h4 class="card-title" id="prima_rimac">Tawshif Ahsan Khan</h4>
+                    <div class="meta">
+                        <a href="#">RIMAC</a>
+                    </div>
+                    <div class="card-text">
+                        <span id="Rimac_GPS">REQUIERE GPS:</span> 
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="float-right">Generado por WEB</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/Aseguradoras/logo_PACIFICO.jpg">
+
+                <div class="card-block">
+                    <h4 class="card-title" id="prima_pacifico">Valor</h4>
+                    <div class="meta">
+                        <a href="#">PACIFICO</a>
+                    </div>
+                    <div class="card-text">
+                        <span id="Pacifico_GPS">REQUIERE GPS:</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="float-right">Generado por WEB</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/Aseguradoras/logo_MAPFRE.jpg">
+
+                <div class="card-block">
+                    <h4 class="card-title" id="prima_mafre">Valor</h4>
+                    <div class="meta">
+                        <a href="#">MAPFRE</a>
+                    </div>
+                    <div class="card-text">
+                        <span id="Mafre_GPS">REQUIERE GPS:</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="float-right">Generado por WEB</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/Aseguradoras/logo_POSITIVA.jpg">
+
+                <div class="card-block">
+                    <h4 class="card-title" id="prima_LaPositiva">Valor</h4>
+                    <div class="meta">
+                        <a href="#">LA POSITIVA</a>
+                    </div>
+                    <div class="card-text">
+                        <span id="LaPositiva_GPS">REQUIERE GPS:</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="float-right">Generado por WEB</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/Aseguradoras/logo_HDI.jpg">
+
+                <div class="card-block">
+                    <h4 class="card-title" id="prima_HDI">Valor</h4>
+                    <div class="meta">
+                        <a href="#">HDI SEGUROS</a>
+                    </div>
+                    <div class="card-text">
+                        <span id="HDI_GPS">REQUIERE GPS:</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="float-right">Generado por WEB</span>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+<input type="hidden" name="idCotizacion" id="idCotizacion" value="@ViewBag.idCotizacion" />
+<script src="~/Javascript/CotizacionDetalle.js?MOD01"></script>

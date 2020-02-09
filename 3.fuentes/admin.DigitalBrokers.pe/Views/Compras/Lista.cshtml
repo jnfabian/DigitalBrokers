@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Lista de Compras";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+<div class="container">
+    <h1>SOLICITUDES DE COMPRA </h1>
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h4>FILTRAR COMPRAS</h4>
+            <span>Use el Filtro de Fechas</span>
+          
+        </div>
+        <div class="col-lg-3">
+            <h4>DESDE</h4>
+            <input type="text" id="txtdesde" value="@DateTime.Now.ToShortDateString()" disabled />
+        </div>
+        <div class="col-lg-3">
+            <h4>HASTA</h4>
+            <input type="text" id="txthasta" value="@DateTime.Now.ToShortDateString()" disabled />
+        </div>
+
+        <div class="col-lg-3">
+            <h4>FILTRO</h4>
+            <input type="button" id="btnFiltrar" class="btn btn-success" value="Buscar" contenteditable="false" />
+        </div>
+
+    </div>
+    <hr />
+
+    <div class="row">
+        <!--MODO TABLA-->
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                <tr>
+                    <th class="center">ID</th>
+                    <th class="center">Cotizacion</th>
+                    <th class="center">Nombre</th>
+                    <th class="center">A.Paterno</th>
+                    <th class="center">A.Materno</th>
+                    <th class="center">DNI</th>
+                    <th class="center">Telefono</th>
+                    <th class="center">Domicilio</th>
+                    <th class="center">Seguro Elegido</th>
+                    <th class="center">Fecha</th>
+                    <th class="center">Estado</th>
+                </tr>
+            </thead>
+
+            <tbody id="compras">
+                <tr></tr>
+            </tbody>
+
+        </table>
+        <!--FIN MODO-->
+    </div>
+</div>
+
+<script src="~/Javascript/Compras.js?MOD01"></script>

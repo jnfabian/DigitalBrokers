@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+
+<div class="container">
+
+    <h2>EDITAR TASA VEHICULAR</h2>
+    
+    <img src="~/images/carico.png" />
+    <hr />
+    <div class="alert alert-warning">
+        <p>Recuerda que la modificación de la tasa significa la nueva reestruccturación del algoritmo cotizador. Este cambio debe ser supervisado.</p>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <h4>ASEGURADORA</h4>
+            <span id="aseguradora"></span>
+        </div>
+        <div class="col-lg-3">
+            <h4>CLASIFICACION</h4>
+            <span id="clasificacion"></span>
+        </div>
+        <div class="col-lg-3">
+            <h4>PROVINCIA</h4>
+            <span id="provincia"></span>
+        </div>
+        <div class="col-lg-3">
+            <h4>Año</h4>
+            <span id="anio"></span>
+        </div>
+
+    </div>
+    <hr />
+    <h2>PORCENTUAL DE LA TASA (%)</h2>
+
+    <hr />
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>TASA</h4>
+            
+            <span class="tasavehicular" id="tasa" contenteditable="true">3.24</span>
+
+        </div>
+        <div class="col-lg-12">
+            <input type="button" id="btnSave" class="btn btn-success" value="Actualizar Deducible" contenteditable="false" />
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="idCorrelativo" value="@ViewBag.idCorrelativo" />
+<script src="~/Javascript/TasaDetalle.js"></script>
+<script src="~/Javascript/Base/jquery.m.toast.js"></script>

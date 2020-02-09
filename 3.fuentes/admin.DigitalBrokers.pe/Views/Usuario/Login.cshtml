@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Administración Central Digitalbrokers.pe</title>
+    <link href="~/Css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <img src="~/images/digitalbrokers.png" />
+                    
+                </div>
+                <div class="modal-body">
+                    <h2 class="text-center">Plataforma de Gestión Central</h2>
+                    <form class="form col-md-12 center-block">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Usuario" id="txtUsuario">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-lg" placeholder="Password" id="txtClave" onkeydown="if (event.keyCode == 13) document.getElementById('btnAceptar').click()">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-success btn-outline btn-lg btn-block" id="btnAceptar" value="Acceso">
+                            <div id="Logueo">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12" id="resultado">
+                        <p>DigitalBrokers S.A.C.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Javascript/Login.js"></script>
+    <script src="~/Javascript/Base/md5.js"></script>
+    <script>iniciarLogin();</script>
+</body>
+</html>

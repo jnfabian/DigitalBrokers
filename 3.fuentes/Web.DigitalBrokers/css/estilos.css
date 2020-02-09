@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.cf-color{
+  background-color: #fff;
+
+}
+.cf-logo{
+  width: 200px;
+  height: 70px;
+
+}
+.nav-link-sup{
+  font-weight: 700;
+  font-size: 16px;
+  color: #cccccc;
+}
+.nav-link-sup .mdl-navigation__link:hover
+{
+  border-bottom: solid 4px #0174DF;
+}
+.cf-dreawer{
+  border-right: none;
+
+}
+.cf-dreawer-separator{
+  height: 2px;
+  background-color: #dcdcdc;
+}
+cf-dreawer .mdl-layout-title{
+  height: 160px;
+}
+cf-dreawer .cf-logo {
+  bottom: 16px;
+  position: absolute;
+}
+.cf-slide{
+  background: url('../imagenes/slide1.png') center no-repeat;
+  background-size: cover;
+  height: 730px;
+  width:  100%;
+
+}
+
+.cf-slide-faq{
+  background: url('../imagenes/fondo_puntos.png') center no-repeat;
+  background-size: cover;
+  height: 500px;
+  width:  100%;
+
+}
+
+.cf-slide-gracias{
+  background: url('../imagenes/gracias-llamada.png') center no-repeat;
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 711px;
+  width:auto;
+
+}
+.cf-slide-comming{
+  background: url('../imagenes/cover-comming.jpg') center no-repeat;
+  background-size: cover;
+  display:inline-block;
+  height: 700px;
+  width:  100%;
+  
+
+}
+.cf-slide-Salud{
+  background: url('../imagenes/nuevosalud.jpg') center no-repeat;
+  background-size: cover;
+  height: 630px;
+  width:  100%;
+}
+
+.cf-slide-Compra{
+  background: url('../imagenes/buy-fondo.png') center no-repeat;
+  background-size: cover;
+  height: 830px;
+  width:  100%;
+
+
+}
+
+.cf-slogan-ppal{
+  color: #000000;
+  font-weight: 700;
+  line-height: 1;
+}
+.cf-slogan{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight:200;
+  padding-top: 40px;
+  margin-bottom:20px;
+}
+.cf-slogan-sub{
+  font-size: 30px;
+  padding-top: 48px;
+}
+.cf-paseo
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight:200;
+  color: #767777;
+  font-size: 36px;
+  padding-top: 50px;
+ margin-bottom:30px;
+}
+.cf-section-taller
+{
+  display:inline-block;
+  vertical-align:middle;
+  position:relative;
+  padding: 8px 0;
+  max-width:90%;
+  margin-left:10%;
+}
+
+.cf-section-taller .cf-section-title
+{
+  padding: 36px 0;
+  text-align: center;
+}
+#grid-taller .mdl-card__media
+{
+  overflow: hidden;
+  padding:10px;
+  background: transparent;
+
+}
+
+#grid-taller .mdl-card__media img{
+  width: 100%;
+  
+ }
+
+
+.cf-link{
+  color:#ff0000;
+}
+.cf-informacion{
+  position: relative;
+  background: url('../imagenes/Vehicular-seguro.jpg') center top no-repeat;
+  background-size:cover;
+  height: 900px;
+}
+
+
+.cf-informacion-bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+}
+.cf-informacion-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  color: #fff;
+  max-width: 100%;
+  text-align: center;
+}
+.cf-informacion-text >p{
+  font-family: 'Roboto', sans-serif;
+  font-size:2em;
+  padding-top: 10px;
+}
+
+.footer{
+    display:block;
+    width:100%;
+    height:70px;
+    background-color:#0174DF;
+    position:absolute;
+    
+}
+
+
+
+/*vehicular - Trabajamos content los mejores seguros*/
+.cf-informacion-seguro{
+  position: relative;
+  background: url('../imagenes/equipo.jpg') center top no-repeat;
+  background-size:cover;
+  height: 900px;
+}
+
+
+.cf-informacion-seguro-bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+}
+.cf-informacion-seguro-text{
+  color: #fff;
+  margin-left: 25%;
+  max-width: 800px;
+  padding: 24px;
+  text-align: left;
+}
+.cf-informacion-seguro-text >p{
+  padding-top: 10px;
+}
+
+
+
+
+/*Salud Informacion*/
+
+
+.cf-informacion-salud{
+  position: relative;
+  background: url('../imagenes/salud2.jpg') center top no-repeat;
+  height: 800px;
+}
+
+.cf-informacion-salud-bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #cacaca;
+}
+.cf-informacion-salud-text{
+  color: #fff;
+  margin-left: 25%;
+  max-width: 800px;
+  padding: 24px;
+  text-align: left;
+}
+.cf-informacion-salud-text >p{
+  padding-top: 10px;
+}
+
+
+
+.cf-botton-youtube{
+  display:block;
+  background-color: #b71c1c;
+  color: white;
+  border-radius: 10px;
+
+}
+.cf-botton-youtube:hover{
+    
+  color:#000000;
+
+}
+
+.cf-botton-probar{
+  display:inline-block;
+  width:280px;
+  background-color: #fff;
+  border: 1px solid #0174DF;
+  border-radius: 10px;
+
+}
+
+.cf-botton-probar:hover{
+    
+  color:#fff;
+  background-color:#0174DF;
+
+}
+
+.cf-botton-salud{
+    display:block;
+    background-color: #b71c1c;
+    color: white;
+    border-radius: 10px;
+    width:200px;
+
+}
+.cf-botton-salud:hover{
+    
+  color:#000000;
+
+}
+
+.cf-botton-cotizar{
+    display:inline-block;
+    background-color: #b71c1c;
+    color: white;
+    border-radius: 10px;
+    width:30%;
+    margin-top:500px;
+
+}
+.cf-botton-cotizar:hover{
+    
+  color:#000000;
+
+}
+
+.cf-botton-contratar{
+    
+  background-color: #b71c1c;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.cf-botton-contratar:hover{
+    color:#000000;
+ 
+}
+.cf-botton-deducibles{
+    
+  background-color: #0174DF;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.cf-botton-deducibles:hover{
+    color:#000000;
+ 
+}
+
+.cf-eventos{
+  margin: 30px auto;
+  max-width: 1044px;
+
+}
+.cf-title{
+  margin: 20px auto;
+}
+.cf-compartir{
+  position: relative;
+  float: right;
+  top: -4px;
+}
+.mdl-card__supporting-text >p
+{
+  padding-top: 20px;
+}
+.mdl-card__supporting-text span{
+    display:inline-flex;
+    
+
+}
+.mdl-card__supporting-text {
+   
+    text-align:left;
+
+}
+.coberturas{
+    text-align:left;
+    display:block;
+overflow-y: auto;
+height: 300px;
+    color:#000000;
+}
+.coberturas span{
+font-size: 1.1em;
+ font-weight:300;
+ padding:5px;
+}
+.mdl-cell:hover{
+    background-color:#d6faf9;
+}
+
+.coberturas ul{
+    text-align:left;
+    list-style:none;
+}
+.coberturas ul li{
+    margin-left:-25px;
+    font-weight:300;
+}
+
+
+/*Talleres*/
+.talleres{
+    text-align:left;
+    display:block;
+
+    color:#000000;
+}
+.talleres span{
+font-size: 1.1em;
+ font-weight:300;
+ padding:5px;
+}
+
+.talleres ul{
+    text-align:left;
+    list-style:none;
+}
+.talleres ul li{
+font-weight:300;
+}
+
+.cf-footer{
+  height:23px;
+  max-height:400px;
+  background-color: #f5f5f5;
+
+}
+
+footer-botones{
+    background-color:#fff;
+    color:fff;
+}
+
+.mdl-textfield {
+width: 50%;
+float: left;
+
+}
+.full-ancho{
+width: 100%;
+}
+.formulario{
+width: 30%;
+height: 540px;
+text-align: center;
+display: inline-block;
+border-radius: 10px;
+
+}
+
+.formulariosalud{
+width: 30%;
+height: 400px;
+text-align: right;
+display: inline-block;
+align-content:center;
+border-radius: 10px;
+
+
+}
+
+.formularioCompra{
+width: 40%;
+height: auto;
+text-align: center;
+display: inline-block;
+border-radius: 10px;
+}
+
+.modal_llamame{
+  width: 300px;
+}
+
+.botones{
+    margin-top:30px;
+    margin-bottom:10px;
+    display:inline-block;
+    text-align:right;
+}
+.botones button{
+    margin-left:10px;
+}
+.GrupoCabecera{
+    
+    display:inline-block;
+    text-align:center;
+    padding:10px; 
+    height:40px;
+}
+
+.GrupoCabecera img
+{
+   
+}
+
+.GrupoCabecera h2,h3{
+    font-family:'Roboto', sans-serif;
+    font-weight:200;
+    font-size:1.9em;
+}
+
+.GrupoCabecera strong{
+    font-weight:400;
+    color:#b71c1c;
+
+}
+
+
+ul.checkmark li:before {
+    text-align:center;
+    content:"\2713\0020";
+}
+
+.Compra-gracias img{
+    border-radius:50px;
+    width:500px;
+    height:500px;
+
+
+}
+.mdl-mini-footer--left-section img {
+    width:32px;
+    height:32px;
+    margin-right:20px;
+
+}
+
+.mdl-mini-footer--left-section img:hover {
+
+}
+
+/*Agregado 29 Diciembre 2016*/
+.informacion-seguro{
+    max-width:99%;
+    align-content:center;
+}
+.contenedor-informacion{
+    width:30%;
+    display:inline-block;
+    padding:10px;
+}
+.contenedor-informacion:hover{
+background-color:#e3f6f7;
+border: 1px dotted #0174DF;
+}
+.contenedor-informacion span{
+    font-family: 'Roboto', sans-serif;
+    font-size:0.7em;
+}
+.contenedor-informacion p{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size:0.5em;
+}
+
+.contenedor-seguros{
+    width:10%;
+    margin-left:20px;
+    display:inline-block;
+    padding:10px;
+    cursor:pointer;
+}
+
+.contenedor-seguros img{
+    width:120px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.contenedor-seguros img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+/*ACORDION PARA EL FAQ*/
+
+* {
+  box-sizing:border-box;
+}
+
+
+.heading-primary {
+  font-size:2em;
+  padding:2em;
+  text-align:center;
+}
+.accordion dl,
+.accordion-list {
+
+}
+.accordion dd,
+.accordion__panel {
+   background-color:#eee;
+   font-size:1em;
+   line-height:1.5em; 
+   margin-bottom:3px;
+}
+.accordion p {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size:1em;
+  padding:1em 2em 1em 2em;
+}
+
+.accordion {
+    position:relative;
+    background-color:#eee;
+
+}
+.container {
+  max-width:960px;
+  margin:0 auto;
+  padding:2em 0 2em 0;
+}
+.accordionTitle,
+.accordion__Heading {
+ font-family: 'Roboto', sans-serif;
+ font-size:1.5em;
+ background-color:#fff; 
+ line-height:25px;
+ color:#0174DF;
+ text-align:center;
+ font-weight:300; 
+ padding:2em;
+ display:block;
+ text-decoration:none;
+ transition:background-color 0.5s ease-in-out;
+ /*border-bottom:1px dashed #0174DF;*/
+
+}
+
+
+.accordionTitle:hover{
+ background-color:#0174DF; 
+ color:#fff;
+
+}
+.accordionTitleActive, 
+.accordionTitle.is-expanded {
+
+}
+.accordionItem {
+    height:100%;
+    overflow:hidden; 
+    max-height:130em;
+    transition:max-height 0.5s;   
+   
+}
+  
+   
+ 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height:100%;
+}
+.animateIn {
+     animation: accordionIn 0.10s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.10s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    
+    /*transform:scale(0.9) rotateX(-60deg);*/
+    transform-origin: 50% 0;
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       
+       transform:scale(1);
+     }
+     100% {
+          
+           /*transform:scale(0.9) rotateX(-60deg);*/
+       }
+}
+/*FIN ACORDION PARA EL FAQ*/
+.invalido{
+   border-bottom:1px solid #b71c1c;
+
+}
+
+
+/*Inicio de Media Querys*/
+/*RESPONSIVE DESIGN SMARTPHONES TIPO A HASTA 549PX*/
+
+@media only screen and (max-width: 549px) {
+    .cf-slogan {
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    .cf-slide-comming {
+        
+        height:200px;
+    }
+
+    .formulario {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    
+    .formulariosalud {
+        width: 90%;
+        height: 340px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+
+
+   .formularioCompra {
+        width: 95%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    mdl-card__supporting-text h3
+    {
+        font-size:1em;
+    }
+
+    .cf-slide{
+      background: url('../imagenes/cover-vehicular.jpg') center no-repeat;
+      height: 700px;
+    }
+
+    .cf-slide-gracias {
+        
+        
+        height:200px;
+    
+    }
+
+
+    .mdl-textfield {
+        position: relative;
+        font-size: 14px;
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .mdl-button {
+        margin-top:50px;
+
+        align-content:center;
+        width:80%;
+
+    }
+    .cf-paseo
+        {
+         margin-top:20px;
+         margin-bottom:20px;
+         font-size: 2em;
+         padding-top: 20px;
+         line-height:1;
+        }
+
+    .cf-informacion{
+     width:100%;
+     height:500px;
+    }
+
+
+    .cf-informacion-bg{
+      width: 100%;
+     background-size:contain;
+      height:300px;
+    }
+    .cf-informacion-text{
+    margin-left:0;
+      width: 100%;
+      padding: 12px;
+
+    }
+
+    .cf-informacion-text span{
+        font-size:2em;
+         line-height:1;
+    }
+    .cf-informacion-text >p{
+      padding-top: 10px;
+    }
+    .cf-botton-youtube {
+        margin-left:0;
+        width:70%;
+    }
+
+
+    .cf-footer{
+        height:50px;
+      
+       }
+    .mdl-mini-footer{
+        
+        height:50px;
+    }
+
+    .mdl-textfield__label{
+        top:13px;
+    }
+    .mdl-mini-footer--left-section img{
+        width:32px;
+        height:32px;
+        
+    }
+
+    .mdl-typography--font-light{
+        display:inline-block;
+        top:0;
+    }
+    .botones{
+        display:block;
+        margin-top:5px;
+        width:90%;
+        align-content:center;
+    }
+    
+    .GrupoCabecera{
+        display:block;
+        height:400px;
+        
+
+    }
+    .GrupoCabecera h2, h3{
+        font-weight:300;
+        font-size:1.4em;
+        height:auto;
+        top:0;
+    }
+    .cf-link{
+        margin-top:10px;
+    }
+    .cf-section-taller{
+        margin-left:0;
+    }
+    .contenedor-informacion {
+        width:99%;
+        display:block;
+    }
+    .contenedor-informacion span {
+        display:block;
+
+    }
+    .contenedor-seguros {
+        width:80%;
+        display:block;
+    }
+       .contenedor-seguros img {
+        width:300px;
+        
+    }
+   
+
+    .accordion {
+      background-color:#fff;
+      display:inline-block;
+      width:70%;
+    }
+    .accordion__panel {
+        background-color:#fff;
+    }
+    .accordionTitle
+    {
+        background-color:#fff;
+        font-size:0.9em !important;
+        line-height:10px;
+    }
+    .accordion p {
+      font-size:0.8em;
+      padding:0.5em 1em 0.5em 1em;
+    
+    }
+    
+    .cf-slide-faq{
+      height: 150px;
+    }
+        .cf-slide-Salud {
+        height:530px;
+
+    }
+
+}
+
+/*NUEVO MEDIA QUERY PARA EL TAMAÑO DE LA PANTALLA DE DIEGO*/
+
+@media only screen and (max-width : 1380px) {
+/* Styles */
+    .formulario {
+        width: 55%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    
+    .formulariosalud {
+        width: 55%;
+        height: 340px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    .cf-slogan {    
+        font-size: 3em;
+    }
+
+     
+}
+
+
+@media only screen and (max-width: 1440px){
+         .formulario {
+        width: 40%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    
+    .formulariosalud {
+        width: 55%;
+        height: 360px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    .cf-slogan {    
+        font-size: 2em;
+    }
+    .cf-botton-probar{
+      width:250px;
+    }
+
+    .cf-slide-Salud {
+        height:530px;
+    }
+
+}
+
+@media only screen and (max-width: 548px){
+     .formulario {
+        width: 90%;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    
+    .formulariosalud {
+        width: 90%;
+        height: 340px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+        margin-left:0;
+    }
+    .cf-slogan {    
+        font-size: 2em;
+    }
+    
+    .cf-slide-Salud {
+        height:430px;
+
+    }
+}
+
+
+
